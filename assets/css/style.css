@@ -72,8 +72,8 @@ html {
     background-color: #666666;
     color: #cccccc;
     font-size: 12px;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    /* grid-row-start: 2;
+    grid-row-end: 3; */
 }
 
 .footerContent {

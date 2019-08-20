@@ -3,7 +3,7 @@ img {
     height: 100%;
 }
 
-/* * {
+* {
     box-sizing: border-box;
 }
 
@@ -104,6 +104,11 @@ html {
     padding: 0 3px;
 }
 
+.column img {
+    width: 300px;
+    height: 200px;
+}
+
 .imageHolder {
     position: relative;
     text-align: center;
@@ -168,4 +173,4 @@ p {
 
 hr {
     color: #777777;
-} */
+}

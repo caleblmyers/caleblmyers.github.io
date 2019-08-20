@@ -5,43 +5,77 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Caleb Myers</title>
-  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lux/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-hVpXlpdRmJ+uXGwD5W6HZMnR9ENcKVRn855pPbuI/mwPIEKAuKgTKgGksVGmlAvt" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-dark">
+<body class="bg-secondary">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="#">Caleb Myers</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="container vh-100">
-    <div class="row h-75 align-items-center">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container bg-dark m-4 p-4 border border-secondary rounded text-white">
+    <div class="row">
       <div class="col">
+        <h1>About Me</h1>
+        <br>
+        <p class="bio clearfix">
+          My name is Caleb Myers. I'm an aspiring software developer in the UNCC
+          Coding Bootcamp. I went to college and studied English Literature, but
+          toward the end of my program I became interested in programming. Ever
+          since writing my first "hello, world" I've been hooked.
+          <br> <br>
+          My studies in English improved my writing, analysis, and creative thinking.
+          These skills combined with a love for technology and figuring out how things
+          work have made programming a newfound passion of mine.
+        </p>
+      </div>
+    </div>
 
+    <div class="row">
+      <div class="col">
+        <h1>Projects</h1>
         <div class="row">
-          <div class="col-8">
-            <span class="display-1 text-white">Caleb Myers</span>
-          </div>
-          <div class="col-4">
-            <div class="nav h-100 align-items-center">
-              <a href="" class="nav-item nav-link text-white">Link</a>
-              <a href="" class="nav-item nav-link text-white">Link</a>
-              <a href="" class="nav-item nav-link text-white">Link</a>
+          <div class="col">
+            <div class="w-100 h-75">
+              <a href="https://caleblmyers.github.io/Project-1/">
+                <img class="rounded" src="assets/images/event-hunters.png" alt="Event Hunters">
+              </a>
             </div>
           </div>
-        </div>
-        <div class="row my-3 text-white">
-          <div class="col lead">
-            <p>This is an example paragraph</p>
+          <div class="col">
+            <div class="w-100 h-75">
+              <a href="https://caleblmyers.github.io/GifTastic/">
+                <img class="rounded" src="assets/images/giphy.png" alt="Event Hunters">
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
   </div>
+
 </body>
 
 </html>

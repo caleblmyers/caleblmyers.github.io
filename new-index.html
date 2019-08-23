@@ -5,9 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Caleb Myers</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/flatly/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T5jhQKMh96HMkXwqVMSjF3CmLcL1nT9//tCqu9By5XSdj7CwR0r+F3LTzUdfkkQf" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style2.css">
+  <!-- JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
@@ -15,8 +17,8 @@
     crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-secondary">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+<body class="bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
     <a class="navbar-brand" href="#">Caleb Myers</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,16 +37,16 @@
     </div>
   </nav>
 
-  <div class="container bg-dark m-4 p-4 border border-secondary rounded text-white">
+  <div class="container bg-primary my-5 p-4 border border-dark rounded text-white">
     <div class="row">
       <div class="col">
         <h1>About Me</h1>
         <br>
         <p class="bio clearfix">
-          My name is Caleb Myers. I'm an aspiring software developer in the UNCC
-          Coding Bootcamp. I went to college and studied English Literature, but
+          My name is Caleb Myers. I'm an aspiring developer in the UNCC
+          Coding Bootcamp. I went to college and studied Literature and Writing, but
           toward the end of my program I became interested in programming. Ever
-          since writing my first "hello, world" I've been hooked.
+          since writing my first "Hello, World" I've been hooked.
           <br> <br>
           My studies in English improved my writing, analysis, and creative thinking.
           These skills combined with a love for technology and figuring out how things
@@ -55,27 +57,77 @@
 
     <div class="row">
       <div class="col">
-        <h1>Projects</h1>
-        <div class="row">
+        <h1 class="mb-3">Projects</h1>
+
+        <div class="row bg-secondary text-primary border border-dark rounded px-3 py-4 mx-1 my-5">
           <div class="col">
             <div class="w-100 h-75">
               <a href="https://caleblmyers.github.io/Project-1/">
-                <img class="rounded" src="assets/images/event-hunters.png" alt="Event Hunters">
+                <img class="img-fluid rounded" src="assets/images/event-hunters.png" alt="Event Hunters">
               </a>
             </div>
           </div>
-          <div class="col">
-            <div class="w-100 h-75">
-              <a href="https://caleblmyers.github.io/GifTastic/">
-                <img class="rounded" src="assets/images/giphy.png" alt="Event Hunters">
-              </a>
+          <div class="col text-center">
+            <div class="row">
+              <div class="col">
+                <h3>Event Hunters</h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p class="text-center">Browse TicketMaster events and find out details about them.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <a class="p-2 gh-link" href="https://github.com/caleblmyers/Project-1">GitHub Repo</a>
+              </div>
             </div>
           </div>
         </div>
+
+        <div class="row bg-secondary text-primary border border-dark rounded px-3 py-4 mx-1 my-5">
+          <div class="col">
+            <div class="w-100 h-75">
+              <a href="https://caleblmyers.github.io/GifTastic/">
+                <img class="img-fluid rounded" src="assets/images/giphy.png" alt="Event Hunters">
+              </a>
+            </div>
+          </div>
+          <div class="col text-center">
+            <div class="row">
+              <div class="col">
+                <h3>Event Hunters</h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p class="text-center">Browse TicketMaster events and find out details about them.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <a class="p-2 gh-link" href="https://github.com/caleblmyers/Project-1">GitHub Repo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
+
   </div>
 
+  <footer class="text-white bg-primary p-3" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h6>GitHub: </h6>
+          <h6>LinkedIn: </h6>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

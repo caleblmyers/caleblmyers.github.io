@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Caleb Myers</title>
   <!-- CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/flatly/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T5jhQKMh96HMkXwqVMSjF3CmLcL1nT9//tCqu9By5XSdj7CwR0r+F3LTzUdfkkQf" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/sandstone/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-G3Fme2BM4boCE9tHx9zHvcxaQoAkksPQa/8oyn1Dzqv7gdcXChereUsXGx6LtbqA" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style2.css">
   <!-- JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -17,97 +17,121 @@
     crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-light">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+<body class="bg-dark">
+  <div class="vh-100 position-relative bg-primary text-white text-center">
+    <div class="container align-vert">
+      <div class="display-4">Caleb Myers</div>
+      <p class="lead text-center">I'm a developer in the UNCC Coding Bootcamp.</p>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow">
     <a class="navbar-brand" href="#">Caleb Myers</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sections" aria-controls="sections"
+      aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="sections">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <li class="nav-item d-inline px-2">
+          <a class="" href="#">About</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+        <li class="nav-item d-inline px-2">
+          <a class="" href="#">Projects</a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <div class="container bg-primary my-5 p-4 border border-dark rounded text-white">
-    <div class="row">
-      <div class="col">
-        <h1>About Me</h1>
-        <br>
-        <p class="bio clearfix">
-          My name is Caleb Myers. I'm an aspiring developer in the UNCC
-          Coding Bootcamp. I went to college and studied Literature and Writing, but
-          toward the end of my program I became interested in programming. Ever
-          since writing my first "Hello, World" I've been hooked.
-          <br> <br>
-          My studies in English improved my writing, analysis, and creative thinking.
-          These skills combined with a love for technology and figuring out how things
-          work have made programming a newfound passion of mine.
-        </p>
-      </div>
-    </div>
-
+  <div class="container bg-light my-5 p-4 shadow-lg">
     <div class="row">
       <div class="col">
         <h1 class="mb-3">Projects</h1>
 
-        <div class="row bg-secondary text-primary border border-dark rounded px-3 py-4 mx-1 my-5">
-          <div class="col">
-            <div class="w-100 h-75">
-              <a href="https://caleblmyers.github.io/Project-1/">
-                <img class="img-fluid rounded" src="assets/images/event-hunters.png" alt="Event Hunters">
-              </a>
+        <div class="row">
+          <div class="col-md-6 my-5">
+            <div class="card shadow-lg mb-3 h-100">
+              <div class="row no-gutters">
+                <div class="card-header w-100">
+                  <h5><strong>Event Hunters</strong></h5>
+                </div>
+              </div>
+              <div class="row no-gutters pt-2 pr-2">
+                <div class="col-md-8">
+                  <div class="card-body text-center">
+                    <p class="card-text">Easily browse TicketMaster events and find out details about them.</p>
+                    <a class="p-2 gh-link" href="https://github.com/caleblmyers/Project-1">GitHub Repo</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="assets/images/event-hunters.png" class="card-img" alt="...">
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col text-center">
-            <div class="row">
-              <div class="col">
-                <h3>Event Hunters</h5>
+
+          <div class="col-md-6 my-5">
+            <div class="card shadow-lg mb-3 h-100">
+              <div class="row no-gutters">
+                <div class="card-header w-100">
+                  <h5><strong>GIF Generator</strong></h5>
+                </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <p class="text-center">Browse TicketMaster events and find out details about them.</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <a class="p-2 gh-link" href="https://github.com/caleblmyers/Project-1">GitHub Repo</a>
+              <div class="row no-gutters pt-2 pr-2">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text">Enter a topic and create a button to look up and display GIFs from Giphy.</p>
+                    <a class="p-2 gh-link" href="https://github.com/caleblmyers/GifTastic">GitHub Repo</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="assets/images/giphy.png" class="card-img" alt="...">
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="row bg-secondary text-primary border border-dark rounded px-3 py-4 mx-1 my-5">
-          <div class="col">
-            <div class="w-100 h-75">
-              <a href="https://caleblmyers.github.io/GifTastic/">
-                <img class="img-fluid rounded" src="assets/images/giphy.png" alt="Event Hunters">
-              </a>
+        
+        <div class="row">
+          <div class="col-md-6 my-5">
+            <div class="card shadow-lg mb-3 h-100">
+              <div class="row no-gutters">
+                <div class="card-header w-100">
+                  <h5><strong>Event Hunters</strong></h5>
+                </div>
+              </div>
+              <div class="row no-gutters pt-2 pr-2">
+                <div class="col-md-8">
+                  <div class="card-body text-center">
+                    <p class="card-text">Easily browse TicketMaster events and find out details about them.</p>
+                    <a class="p-2 gh-link" href="https://github.com/caleblmyers/Project-1">GitHub Repo</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="assets/images/event-hunters.png" class="card-img" alt="...">
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col text-center">
-            <div class="row">
-              <div class="col">
-                <h3>Event Hunters</h5>
+
+          <div class="col-md-6 my-5">
+            <div class="card shadow-lg mb-3 h-100">
+              <div class="row no-gutters">
+                <div class="card-header w-100">
+                  <h5><strong>GIF Generator</strong></h5>
+                </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <p class="text-center">Browse TicketMaster events and find out details about them.</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <a class="p-2 gh-link" href="https://github.com/caleblmyers/Project-1">GitHub Repo</a>
+              <div class="row no-gutters pt-2 pr-2">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text">Enter a topic and create a button to look up and display GIFs from Giphy.</p>
+                    <a class="p-2 gh-link" href="https://github.com/caleblmyers/GifTastic">GitHub Repo</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="assets/images/giphy.png" class="card-img" alt="...">
+                </div>
               </div>
             </div>
           </div>
@@ -115,15 +139,14 @@
 
       </div>
     </div>
-
   </div>
 
-  <footer class="text-white bg-primary p-3" id="footer">
-    <div class="container">
+  <footer class="bg-light">
+    <div class="container pt-3">
       <div class="row">
         <div class="col">
-          <h6>GitHub: </h6>
-          <h6>LinkedIn: </h6>
+          <span class="lead">GitHub: </span>
+          <span class="lead">LinkedIn: </span>
         </div>
       </div>
     </div>

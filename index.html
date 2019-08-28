@@ -1,71 +1,228 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>About Me</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Caleb Myers</title>
+  <!-- CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/sandstone/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-G3Fme2BM4boCE9tHx9zHvcxaQoAkksPQa/8oyn1Dzqv7gdcXChereUsXGx6LtbqA" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style2.css">
+  <!-- JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </head>
 
-<body background="assets/images/email-pattern.png">
+<body>
+  <div class="vh-100 position-relative text-white text-center">
+    <div class="container align-vert">
+      <div class="display-4 text-shadow">Hi there, I'm <span id="header-title">Caleb</span></div>
+      <br><br>
+      <p class="lead text-center text-shadow">I'm a full-stack web developer with a passion for solving problems and making things work.</p>
+    </div>
+  </div>
 
-  <div>
-    <div class="navbar clearfix">
-      <div class="navButtons">
-        <div class="heading">
-          <header>Caleb Myers</header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top py-3 drop-shadow" id="projects">
+    <a class="navbar-brand" href="#">Caleb Myers</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sections" aria-controls="sections"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="sections">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item d-inline px-2">
+          <a class="" href="#">About</a>
+        </li>
+        <li class="nav-item d-inline px-2">
+          <a class="" href="#projects">Projects</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container bg-light my-5 p-4 drop-shadow">
+    <div class="row">
+      <div class="col">
+        <div class="display-4 text-center mb-5">Projects</div>
+
+        <div class="row justify-content-center">
+          <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
+            <div class="card drop-shadow text-center">
+              <img src="assets/images/event-hunters.png" class="rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Event Hunters</h5>
+                <p class="card-text">Easily browse TicketMaster events and find out details about them.</p>
+                <a href="https://github.com/caleblmyers/Project-1" class="btn btn-primary mx-1">Deployed Site</a>
+                <a href="https://github.com/caleblmyers/Project-1" class="btn btn-primary mx-1">GitHub Repo</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
+            <div class="card drop-shadow text-center">
+              <img src="assets/images/scraper-sites.png" class="rounded" alt="Scraper Sites">
+              <div class="card-body">
+                <h5 class="card-title">Scraper Sites</h5>
+                <p class="card-text">Scrape news sites and comment on your favorite articles.</p>
+                <a href="https://github.com/caleblmyers/mongo-scraper" class="btn btn-primary mx-1">Deployed Site</a>
+                <a href="https://github.com/caleblmyers/mongo-scraper" class="btn btn-primary mx-1">GitHub Repo</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
+            <div class="card drop-shadow text-center">
+              <img src="assets/images/giphy.png" class="rounded" alt="GIF Generator">
+              <div class="card-body">
+                <h5 class="card-title">GIF Generator</h5>
+                <p class="card-text">Enter a topic and create a button to look up and display GIFs from Giphy.</p>
+                <a href="https://github.com/caleblmyers/GifTastic" class="btn btn-primary mx-1">Deployed Site</a>
+                <a href="https://github.com/caleblmyers/GifTastic" class="btn btn-primary mx-1">GitHub Repo</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
+            <div class="card drop-shadow text-center">
+              <img src="assets/images/jobs-r-us.png" class="rounded" alt="Jobs R Us">
+              <div class="card-body">
+                <h5 class="card-title">Jobs-R-Us</h5>
+                <p class="card-text">Look up statistics based on state and national job markets.</p>
+                <a href="https://github.com/caleblmyers/JobStuff2" class="btn btn-primary">Deployed Site</a>
+                <a href="https://github.com/caleblmyers/JobStuff2" class="btn btn-primary">GitHub Repo</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
+            <div class="card drop-shadow text-center">
+              <img src="assets/images/burger.jpg" class="rounded" alt="Burger Shop">
+              <div class="card-body">
+                <h5 class="card-title">The Burger Shop</h5>
+                <p class="card-text">Come up with new burger names and see how popular they become!</p>
+                <a href="https://github.com/caleblmyers/burger" class="btn btn-primary">Deployed Site</a>
+                <a href="https://github.com/caleblmyers/burger" class="btn btn-primary">GitHub Repo</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
+            <div class="card drop-shadow text-center">
+              <img src="assets/images/futurama.jpg" class="rounded" alt="Futurama Survey">
+              <div class="card-body">
+                <h5 class="card-title">Futurama Survey</h5>
+                <p class="card-text">Take a survey and find out which Futurama character you are like.</p>
+                <a href="https://github.com/caleblmyers/express-survey" class="btn btn-primary">Deployed Site</a>
+                <a href="https://github.com/caleblmyers/express-survey" class="btn btn-primary">GitHub Repo</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
+            <div class="card drop-shadow text-center">
+              <img src="assets/images/win.png" class="rounded" alt="Word Guess CLI Game">
+              <div class="card-body">
+                <h5 class="card-title">A Word Guess of Ice and Fire</h5>
+                <p class="card-text">A Song of Ice and Fire themed command line word guess game.</p>
+                <a href="https://github.com/caleblmyers/word-guess-cli" class="btn btn-primary">Deployed Site</a>
+                <a href="https://github.com/caleblmyers/word-guess-cli" class="btn btn-primary">GitHub Repo</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
+            <div class="card drop-shadow text-center">
+              <img src="assets/images/manager-view-all.png" class="rounded" alt="Store Manager CLI">
+              <div class="card-body">
+                <h5 class="card-title">Store Manager CLI</h5>
+                <p class="card-text">A command line interface for interacting with an online store.</p>
+                <a href="https://github.com/caleblmyers/sql-storefront" class="btn btn-primary">Deployed Site</a>
+                <a href="https://github.com/caleblmyers/sql-storefront" class="btn btn-primary">GitHub Repo</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
+            <div class="card drop-shadow text-center">
+              <img src="assets/images/concert-working.png" class="rounded" alt="LIRI Command Line App">
+              <div class="card-body">
+                <h5 class="card-title">LIRI Command Line App</h5>
+                <p class="card-text">An app that takes in commands to search various API databases.</p>
+                <a href="https://github.com/caleblmyers/liri-node-app" class="btn btn-primary">Deployed Site</a>
+                <a href="https://github.com/caleblmyers/liri-node-app" class="btn btn-primary">GitHub Repo</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
+            <div class="card drop-shadow text-center">
+              <img src="assets/images/ipad.png" class="rounded" alt="Game of Thrones Hangman">
+              <div class="card-body">
+                <h5 class="card-title">Game of Thrones Hangman</h5>
+                <p class="card-text">Hangman game themed around Great Houses from Westeros.</p>
+                <a href="https://github.com/caleblmyers/Word-Guess-Game" class="btn btn-primary">Deployed Site</a>
+                <a href="https://github.com/caleblmyers/Word-Guess-Game" class="btn btn-primary">GitHub Repo</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
+            <div class="card drop-shadow text-center">
+              <img src="assets/images/train.png" class="rounded" alt="Train Scheduler App">
+              <div class="card-body">
+                <h5 class="card-title">Train Scheduler</h5>
+                <p class="card-text">A site for managing and tracking train schedules.</p>
+                <a href="https://github.com/caleblmyers/Train-Scheduler" class="btn btn-primary">Deployed Site</a>
+                <a href="https://github.com/caleblmyers/Train-Scheduler" class="btn btn-primary">GitHub Repo</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
+            <div class="card drop-shadow text-center">
+              <img src="assets/images/crystal.png" class="rounded" alt="Crystal Collector Game">
+              <div class="card-body">
+                <h5 class="card-title">Crystal Collector</h5>
+                <p class="card-text">Click on the crystals to gain points and reach the goal!</p>
+                <a href="https://github.com/caleblmyers/GifTastic" class="btn btn-primary">Deployed Site</a>
+                <a href="https://github.com/caleblmyers/GifTastic" class="btn btn-primary">GitHub Repo</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
+            <div class="card drop-shadow text-center">
+              <img src="assets/images/event-hunters.png" class="rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Alt Rock Trivia</h5>
+                <p class="card-text">Easily browse TicketMaster events and find out details about them.</p>
+                <a href="https://github.com/caleblmyers/Project-1" class="btn btn-primary">Deployed Site</a>
+                <a href="https://github.com/caleblmyers/Project-1" class="btn btn-primary">GitHub Repo</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
+            <div class="card drop-shadow text-center">
+              <img src="assets/images/giphy.png" class="rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Star Wars RPG Game</h5>
+                <p class="card-text">Enter a topic and create a button to look up and display GIFs from Giphy.</p>
+                <a href="https://github.com/caleblmyers/GifTastic" class="btn btn-primary">Deployed Site</a>
+                <a href="https://github.com/caleblmyers/GifTastic" class="btn btn-primary">GitHub Repo</a>
+              </div>
+            </div>
+          </div>
+
         </div>
 
-        <div class="links">
-          <a class="about" href="index.html">About</a>
-          <a class="portfolio" href="portfolio.html">Portfolio</a>
-          <a class="contact" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- <footer class="bg-light">
+    <div class="container pt-3">
+      <div class="row">
+        <div class="col">
+          <span class="lead">GitHub: </span>
+          <span class="lead">LinkedIn: </span>
         </div>
       </div>
     </div>
-
-    <div class="contentBody clearfix">
-      <header class="pageHeading">About Me</header>
-      <hr>
-      <p class="bio clearfix">
-        <img class="myPicture" src="assets/images/myPicture.jpg" alt="Caleb Myers">
-
-        hello, friends.
-
-        <br> <br>
-
-        My name is Caleb Myers. I'm an aspiring software developer in the UNCC
-        Coding Bootcamp. I went to college and studied English Literature, but
-        toward the end of my program I became interested in programming. Ever
-        since writing my first "hello, world" I've been hooked.
-
-        <br> <br>
-
-        My studies in English improved my writing, analysis, and creative thinking.
-        These skills combined with a love for technology and figuring out how things
-        work have made programming a newfound passion of mine. I hope to take this
-        time to learn, and eventually work on great projects.
-
-        <br> <br>
-
-        Apart from programming, my main interests lie in music, movies, and video
-        games. I love all sorts of Rock, Electronic, and Hip-hop music, while some
-        of my favorites are Gorillaz, Incubus, deadmau5, MGMT, Pretty Lights and \
-        so much more. Some of my favorite movies are Dazed and Confused,
-        Orange County, There Will Be Blood, and Pulp Fiction. Video games have been a
-        huge part of my life ever since I first started playing on a Nintendo 64.
-        Some all time favorites are Final Fantasy X, The Elder Scrolls IV: Oblivion,
-        and World of Warcraft.
-
-      </p>
-    </div>
-  </div>
-
-  <div class="footer">
-    <p class="footerContent">
-      Copyright 2019
-    </p>
-  </div>
+  </footer> -->
+  <script src="assets/js/index.js"></script>
 </body>
 
 </html>

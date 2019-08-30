@@ -6,7 +6,7 @@ body {
   min-height: 100vh;
   position: relative;
   font-size: 1.05rem;
-  background: url(../images/stardust.png)
+  background: url(../images/bg-dark-hex.png)
 }
 img {
   height: 250px;

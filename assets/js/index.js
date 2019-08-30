@@ -1,3 +1,3 @@
-$(function () {
-  $('#projects').localScroll({ duration: 800 });
-});
+// $(function () {
+//   $('#projects').localScroll({ duration: 800 });
+// });

@@ -10,18 +10,208 @@
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/sandstone/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-G3Fme2BM4boCE9tHx9zHvcxaQoAkksPQa/8oyn1Dzqv7gdcXChereUsXGx6LtbqA" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/style2.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <!-- JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.2/paper-full.js"
+    integrity="sha256-0UCYTfEkQlxl7Fy99RM2kU+ScyrKrW005WKxkeu3To0=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.2/howler.js"
+    integrity="sha256-K6gwVUMyEPd4s9vtZXdCIPySi3r1WhzqpUAw4DR0G9I=" crossorigin="anonymous"></script>
+  <script type="text/paperscript" canvas="myCanvas">
+    var data = {
+    	q: {
+    		sound: new Howl({
+    			src: ['./assets/audio/bubbles.mp3']
+    		}),
+    		color: '#1abc9c'
+    	},
+    	w: {
+    		sound: new Howl({
+    			src: ['./assets/audio/clay.mp3']
+    		}),
+    		color: '#2ecc71'
+    	},
+    	e: {
+    		sound: new Howl({
+    			src: ['./assets/audio/confetti.mp3']
+    		}),
+    		color: '#3498db'
+    	},
+    	r: {
+    		sound: new Howl({
+    			src: ['./assets/audio/corona.mp3']
+    		}),
+    		color: '#9b59b6'
+    	},
+    	t: {
+    		sound: new Howl({
+    			src: ['./assets/audio/dotted-spiral.mp3']
+    		}),
+    		color: '#34495e'
+    	},
+    	y: {
+    		sound: new Howl({
+    			src: ['./assets/audio/flash-1.mp3']
+    		}),
+    		color: '#16a085'
+    	},
+    	u: {
+    		sound: new Howl({
+    			src: ['./assets/audio/flash-2.mp3']
+    		}),
+    		color: '#27ae60'
+    	},
+    	i: {
+    		sound: new Howl({
+    			src: ['./assets/audio/flash-3.mp3']
+    		}),
+    		color: '#2980b9'
+    	},
+    	o: {
+    		sound: new Howl({
+    			src: ['./assets/audio/glimmer.mp3']
+    		}),
+    		color: '#8e44ad'
+    	},
+    	p: {
+    		sound: new Howl({
+    			src: ['./assets/audio/moon.mp3']
+    		}),
+    		color: '#2c3e50'
+    	},
+    	a: {
+    		sound: new Howl({
+    			src: ['./assets/audio/pinwheel.mp3']
+    		}),
+    		color: '#f1c40f'
+    	},
+    	s: {
+    		sound: new Howl({
+    			src: ['./assets/audio/piston-1.mp3']
+    		}),
+    		color: '#e67e22'
+    	},
+    	d: {
+    		sound: new Howl({
+    			src: ['./assets/audio/piston-2.mp3']
+    		}),
+    		color: '#e74c3c'
+    	},
+    	f: {
+    		sound: new Howl({
+    			src: ['./assets/audio/prism-1.mp3']
+    		}),
+    		color: '#95a5a6'
+    	},
+    	g: {
+    		sound: new Howl({
+    			src: ['./assets/audio/prism-2.mp3']
+    		}),
+    		color: '#f39c12'
+    	},
+    	h: {
+    		sound: new Howl({
+    			src: ['./assets/audio/prism-3.mp3']
+    		}),
+    		color: '#d35400'
+    	},
+    	j: {
+    		sound: new Howl({
+    			src: ['./assets/audio/splits.mp3']
+    		}),
+    		color: '#1abc9c'
+    	},
+    	k: {
+    		sound: new Howl({
+    			src: ['./assets/audio/squiggle.mp3']
+    		}),
+    		color: '#2ecc71'
+    	},
+    	l: {
+    		sound: new Howl({
+    			src: ['./assets/audio/strike.mp3']
+    		}),
+    		color: '#3498db'
+    	},
+    	z: {
+    		sound: new Howl({
+    			src: ['./assets/audio/suspension.mp3']
+    		}),
+    		color: '#9b59b6'
+    	},
+    	x: {
+    		sound: new Howl({
+    			src: ['./assets/audio/timer.mp3']
+    		}),
+    		color: '#34495e'
+    	},
+    	c: {
+    		sound: new Howl({
+    			src: ['./assets/audio/ufo.mp3']
+    		}),
+    		color: '#16a085'
+    	},
+    	v: {
+    		sound: new Howl({
+    			src: ['./assets/audio/veil.mp3']
+    		}),
+    		color: '#27ae60'
+    	},
+    	b: {
+    		sound: new Howl({
+    			src: ['./assets/audio/wipe.mp3']
+    		}),
+    		color: '#2980b9'
+    	},
+    	n: {
+    		sound: new Howl({
+    			src: ['./assets/audio/zig-zag.mp3']
+    		}),
+    		color: '#8e44ad'
+    	},
+    	m: {
+    		sound: new Howl({
+    			src: ['./assets/audio/moon.mp3']
+    		}),
+    		color: '#2c3e50'
+    	}
+    }
+    
+    var circles = [];
+     
+    function onKeyDown(event) {
+      console.log(view)
+      if (data[event.key]) {
+        data[event.key].sound.play()
+        var maxPoint = new Point(view.size.width, view.size.height);
+        var randomPoint = Point.random();
+        var point = maxPoint * randomPoint;
+        var newCircle = new Path.Circle(point, 300);
+        newCircle.fillColor = data[event.key].color
+        // newCircle.fillColor.hue = Math.random() * 360;   
+        circles.push(newCircle);
+      }
+    }
+    
+    function onFrame(event) {
+      for(var i = 0; i < circles.length; i++){
+        circles[i].fillColor.hue += 1;
+        circles[i].scale(0.9);
+      }
+    }
+  </script>
 </head>
 
-<body>
+<body onresize="resizeCanvas()">
   <div class="vh-100 position-relative text-white text-center">
-    <div class="container align-center">
+    <div class="position-relative" id="canvas-container">
+      <canvas id="myCanvas"></canvas>
+    </div>
+    <div class="container align-center" id="header-container">
       <div class="display-4 text-shadow">Hi there, I'm <span id="header-title">Caleb</span></div>
       <br><br>
       <h4 class="text-center text-shadow">I'm a full-stack web developer with a passion for solving problems and
@@ -47,121 +237,122 @@
           </a>
         </div>
       </div>
-      <!-- <div class="row my-4">
+      <div class="row mt-5">
         <div class="col">
-          <a class="btn btn-outline-light" href="#projects">Resume Link</a>
+          <button class="btn btn-outline-light mx-auto" id="btn-patatap">
+            <p class="mb-0 p-2 h6">Make Some Noise!</p>
+          </button>
         </div>
       </div>
-      <div class="row my-4">
-        <div class="col">
-          <a class="btn btn-outline-light" href="#projects">Make Some Noise!</a>
-        </div>
-      </div> -->
     </div>
   </div>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top py-3 drop-shadow text-shadow-sm" id="projects">
-    <a class="navbar-brand" href="#">Caleb Myers</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sections" aria-controls="sections"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <main>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top py-3 drop-shadow text-shadow-sm" id="projects">
+      <a class="navbar-brand" href="#">Caleb Myers</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sections"
+        aria-controls="sections" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="sections">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item d-inline px-2">
-          <a class="" href="#">About</a>
-        </li>
-        <li class="nav-item d-inline px-2">
-          <a class="" href="#projects">Projects</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+      <div class="collapse navbar-collapse" id="sections">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item d-inline px-2">
+            <a class="" href="#">About</a>
+          </li>
+          <li class="nav-item d-inline px-2">
+            <a class="" href="#projects">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-  <div class="container bg-light my-5 p-4 drop-shadow">
-    <div class="row">
-      <div class="col">
-        <div class="display-4 text-center text-shadow-sm">Projects</div>
+    <div class="container bg-light my-5 p-4 drop-shadow">
+      <div class="row">
+        <div class="col">
+          <div class="display-4 text-center text-shadow-sm">Projects</div>
 
-        <div class="row mt-5 justify-content-center">
-          <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
-            <div class="card drop-shadow text-center">
-              <img src="assets/images/event-hunters.png" class="rounded" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Event Hunters</h5>
-                <p class="card-text">Easily browse TicketMaster events and find out details about them.</p>
-                <a target="_blank" href="https://caleblmyers.github.io/Project-1" class="btn btn-primary mx-1">Deployed
-                  Site</a>
-                <a target="_blank" href="https://github.com/caleblmyers/Project-1" class="btn btn-primary mx-1">GitHub
-                  Repo</a>
+          <div class="row mt-5 justify-content-center">
+            <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
+              <div class="card drop-shadow text-center">
+                <img src="assets/images/event-hunters.png" class="rounded" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Event Hunters</h5>
+                  <p class="card-text">Easily browse TicketMaster events and find out details about them.</p>
+                  <a target="_blank" href="https://caleblmyers.github.io/Project-1"
+                    class="btn btn-primary mx-1">Deployed
+                    Site</a>
+                  <a target="_blank" href="https://github.com/caleblmyers/Project-1" class="btn btn-primary mx-1">GitHub
+                    Repo</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
-            <div class="card drop-shadow text-center">
-              <img src="assets/images/unknown-heroes.png" class="rounded" alt="Unknown Heroes">
-              <div class="card-body">
-                <h5 class="card-title">Unknown Heroes</h5>
-                <p class="card-text">Choose a hero and battle enemies to gain experience and level up!</p>
-                <a target="_blank" href="https://unknownheroes.herokuapp.com/" class="btn btn-primary">Deployed Site</a>
-                <a target="_blank" href="https://github.com/caleblmyers/unknown-heroes" class="btn btn-primary">GitHub
-                  Repo</a>
+            <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
+              <div class="card drop-shadow text-center">
+                <img src="assets/images/unknown-heroes.png" class="rounded" alt="Unknown Heroes">
+                <div class="card-body">
+                  <h5 class="card-title">Unknown Heroes</h5>
+                  <p class="card-text">Choose a hero and battle enemies to gain experience and level up!</p>
+                  <a target="_blank" href="https://unknown-heroes.herokuapp.com/" class="btn btn-primary">Deployed
+                    Site</a>
+                  <a target="_blank" href="https://github.com/caleblmyers/unknown-heroes" class="btn btn-primary">GitHub
+                    Repo</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
-            <div class="card drop-shadow text-center">
-              <img src="assets/images/chen.png" class="rounded" alt="React Matching Game">
-              <div class="card-body">
-                <h5 class="card-title">React Matching Game</h5>
-                <p class="card-text">Test your memory in this matching game made with React.</p>
-                <a target="_blank" href="https://caleblmyers.github.io/memory-game/" class="btn btn-primary">Deployed
-                  Site</a>
-                <a target="_blank" href="https://github.com/caleblmyers/memory-game" class="btn btn-primary">GitHub
-                  Repo</a>
+            <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
+              <div class="card drop-shadow text-center">
+                <img src="assets/images/chen.png" class="rounded" alt="React Matching Game">
+                <div class="card-body">
+                  <h5 class="card-title">React Matching Game</h5>
+                  <p class="card-text">Test your memory in this matching game made with React.</p>
+                  <a target="_blank" href="https://caleblmyers.github.io/memory-game/" class="btn btn-primary">Deployed
+                    Site</a>
+                  <a target="_blank" href="https://github.com/caleblmyers/memory-game" class="btn btn-primary">GitHub
+                    Repo</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
-            <div class="card drop-shadow text-center">
-              <img src="assets/images/jobs-r-us.png" class="rounded" alt="Jobs R Us">
-              <div class="card-body">
-                <h5 class="card-title">Jobs-R-Us</h5>
-                <p class="card-text">Look up statistics based on state and national job markets.</p>
-                <a target="_blank" href="https://jobs-r-us.herokuapp.com/" class="btn btn-primary">Deployed Site</a>
-                <a target="_blank" href="https://github.com/caleblmyers/JobStuff2" class="btn btn-primary">GitHub
-                  Repo</a>
+            <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
+              <div class="card drop-shadow text-center">
+                <img src="assets/images/jobs-r-us.png" class="rounded" alt="Jobs R Us">
+                <div class="card-body">
+                  <h5 class="card-title">Jobs-R-Us</h5>
+                  <p class="card-text">Look up statistics based on state and national job markets.</p>
+                  <a target="_blank" href="https://jobs-r-us.herokuapp.com/" class="btn btn-primary">Deployed Site</a>
+                  <a target="_blank" href="https://github.com/caleblmyers/JobStuff2" class="btn btn-primary">GitHub
+                    Repo</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
-            <div class="card drop-shadow text-center">
-              <img src="assets/images/scraper-sites.png" class="rounded" alt="Scraper Sites">
-              <div class="card-body">
-                <h5 class="card-title">Scraper Sites</h5>
-                <p class="card-text">Scrape news sites and comment on your favorite articles.</p>
-                <a target="_blank" href="https://scraper-sites.herokuapp.com" class="btn btn-primary mx-1">Deployed
-                  Site</a>
-                <a target="_blank" href="https://github.com/caleblmyers/mongo-scraper"
-                  class="btn btn-primary mx-1">GitHub Repo</a>
+            <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
+              <div class="card drop-shadow text-center">
+                <img src="assets/images/scraper-sites.png" class="rounded" alt="Scraper Sites">
+                <div class="card-body">
+                  <h5 class="card-title">Scraper Sites</h5>
+                  <p class="card-text">Scrape news sites and comment on your favorite articles.</p>
+                  <a target="_blank" href="https://scraper-sites.herokuapp.com" class="btn btn-primary mx-1">Deployed
+                    Site</a>
+                  <a target="_blank" href="https://github.com/caleblmyers/mongo-scraper"
+                    class="btn btn-primary mx-1">GitHub Repo</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
-            <div class="card drop-shadow text-center">
-              <img src="assets/images/giphy.png" class="rounded" alt="GIF Generator">
-              <div class="card-body">
-                <h5 class="card-title">GIF Generator</h5>
-                <p class="card-text">Enter a topic and create a button to look up and display GIFs from Giphy.</p>
-                <a target="_blank" href="https://caleblmyers.github.io/GifTastic" class="btn btn-primary mx-1">Deployed
-                  Site</a>
-                <a target="_blank" href="https://github.com/caleblmyers/GifTastic" class="btn btn-primary mx-1">GitHub
-                  Repo</a>
+            <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
+              <div class="card drop-shadow text-center">
+                <img src="assets/images/giphy.png" class="rounded" alt="GIF Generator">
+                <div class="card-body">
+                  <h5 class="card-title">GIF Generator</h5>
+                  <p class="card-text">Enter a topic and create a button to look up and display GIFs from Giphy.</p>
+                  <a target="_blank" href="https://caleblmyers.github.io/GifTastic"
+                    class="btn btn-primary mx-1">Deployed
+                    Site</a>
+                  <a target="_blank" href="https://github.com/caleblmyers/GifTastic" class="btn btn-primary mx-1">GitHub
+                    Repo</a>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
+            <!-- <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
             <div class="card drop-shadow text-center">
               <img src="assets/images/futurama.jpg" class="rounded" alt="Futurama Survey">
               <div class="card-body">
@@ -186,53 +377,55 @@
               </div>
             </div>
           </div> -->
-          <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
-            <div class="card drop-shadow text-center">
-              <img src="assets/images/win.png" class="rounded" alt="Word Guess CLI Game">
-              <div class="card-body">
-                <h5 class="card-title">A Word Guess of Ice and Fire</h5>
-                <p class="card-text">A Song of Ice and Fire themed command line word guess game.</p>
-                <a target="_blank" href="https://github.com/caleblmyers/word-guess-cli" class="btn btn-primary">GitHub
-                  Repo</a>
+            <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
+              <div class="card drop-shadow text-center">
+                <img src="assets/images/win.png" class="rounded" alt="Word Guess CLI Game">
+                <div class="card-body">
+                  <h5 class="card-title">A Word Guess of Ice and Fire</h5>
+                  <p class="card-text">A Song of Ice and Fire themed command line word guess game.</p>
+                  <a target="_blank" href="https://github.com/caleblmyers/word-guess-cli" class="btn btn-primary">GitHub
+                    Repo</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
-            <div class="card drop-shadow text-center">
-              <img src="assets/images/manager-view-all.png" class="rounded" alt="Store Manager CLI">
-              <div class="card-body">
-                <h5 class="card-title">Store Manager CLI</h5>
-                <p class="card-text">A command line interface for interacting with an online store.</p>
-                <a target="_blank" href="https://github.com/caleblmyers/sql-storefront" class="btn btn-primary">GitHub
-                  Repo</a>
+            <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
+              <div class="card drop-shadow text-center">
+                <img src="assets/images/manager-view-all.png" class="rounded" alt="Store Manager CLI">
+                <div class="card-body">
+                  <h5 class="card-title">Store Manager CLI</h5>
+                  <p class="card-text">A command line interface for interacting with an online store.</p>
+                  <a target="_blank" href="https://github.com/caleblmyers/sql-storefront" class="btn btn-primary">GitHub
+                    Repo</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
-            <div class="card drop-shadow text-center">
-              <img src="assets/images/concert-working.png" class="rounded" alt="LIRI Command Line App">
-              <div class="card-body">
-                <h5 class="card-title">LIRI Command Line App</h5>
-                <p class="card-text">An app that takes in commands to search various API databases.</p>
-                <a target="_blank" href="https://github.com/caleblmyers/liri-node-app" class="btn btn-primary">GitHub
-                  Repo</a>
+            <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
+              <div class="card drop-shadow text-center">
+                <img src="assets/images/concert-working.png" class="rounded" alt="LIRI Command Line App">
+                <div class="card-body">
+                  <h5 class="card-title">LIRI Command Line App</h5>
+                  <p class="card-text">An app that takes in commands to search various API databases.</p>
+                  <a target="_blank" href="https://github.com/caleblmyers/liri-node-app" class="btn btn-primary">GitHub
+                    Repo</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
-            <div class="card drop-shadow text-center">
-              <img src="assets/images/ipad.png" class="rounded" alt="Game of Thrones Hangman">
-              <div class="card-body">
-                <h5 class="card-title">Game of Thrones Hangman</h5>
-                <p class="card-text">Hangman game themed around Great Houses from Westeros.</p>
-                <a target="_blank" href="https://caleblmyers.github.io/Word-Guess-Game" class="btn btn-primary">Deployed
-                  Site</a>
-                <a target="_blank" href="https://github.com/caleblmyers/Word-Guess-Game" class="btn btn-primary">GitHub
-                  Repo</a>
+            <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
+              <div class="card drop-shadow text-center">
+                <img src="assets/images/ipad.png" class="rounded" alt="Game of Thrones Hangman">
+                <div class="card-body">
+                  <h5 class="card-title">Game of Thrones Hangman</h5>
+                  <p class="card-text">Hangman game themed around Great Houses from Westeros.</p>
+                  <a target="_blank" href="https://caleblmyers.github.io/Word-Guess-Game"
+                    class="btn btn-primary">Deployed
+                    Site</a>
+                  <a target="_blank" href="https://github.com/caleblmyers/Word-Guess-Game"
+                    class="btn btn-primary">GitHub
+                    Repo</a>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
+            <!-- <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
             <div class="card drop-shadow text-center">
               <img src="assets/images/train.png" class="rounded" alt="Train Scheduler App">
               <div class="card-body">
@@ -285,23 +478,25 @@
             </div>
           </div> -->
 
-        </div>
+          </div>
 
-      </div>
-    </div>
-  </div>
-
-  <footer class="bg-light">
-    <div class="container h-100 position-relative">
-      <div class="row align-center">
-        <div class="col">
-          <span class="h4">Caleb Myers</span>
-          <a href="https://github.com/caleblmyers"><i class="pl-3 fa fa-github"></i></a>
         </div>
       </div>
     </div>
-  </footer>
-  <script src="assets/js/index.js"></script>
+
+    <footer class="bg-light">
+      <div class="container h-100 position-relative">
+        <div class="row align-center">
+          <div class="col">
+            <span class="h4">Caleb Myers</span>
+            <a href="https://github.com/caleblmyers"><i class="pl-3 fa fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="./assets/js/index.js"></script>
 </body>
 
 </html>

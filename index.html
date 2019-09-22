@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Caleb Myers</title>
   <!-- CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/5.11.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/493c2bb60a.js" crossorigin="anonymous"></script>
   <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/sandstone/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-G3Fme2BM4boCE9tHx9zHvcxaQoAkksPQa/8oyn1Dzqv7gdcXChereUsXGx6LtbqA" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -21,196 +22,10 @@
     integrity="sha256-0UCYTfEkQlxl7Fy99RM2kU+ScyrKrW005WKxkeu3To0=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.2/howler.js"
     integrity="sha256-K6gwVUMyEPd4s9vtZXdCIPySi3r1WhzqpUAw4DR0G9I=" crossorigin="anonymous"></script>
-  <script type="text/paperscript" canvas="myCanvas">
-    var data = {
-    	q: {
-    		sound: new Howl({
-    			src: ['./assets/audio/bubbles.mp3']
-    		}),
-    		color: '#1abc9c'
-    	},
-    	w: {
-    		sound: new Howl({
-    			src: ['./assets/audio/clay.mp3']
-    		}),
-    		color: '#2ecc71'
-    	},
-    	e: {
-    		sound: new Howl({
-    			src: ['./assets/audio/confetti.mp3']
-    		}),
-    		color: '#3498db'
-    	},
-    	r: {
-    		sound: new Howl({
-    			src: ['./assets/audio/corona.mp3']
-    		}),
-    		color: '#9b59b6'
-    	},
-    	t: {
-    		sound: new Howl({
-    			src: ['./assets/audio/dotted-spiral.mp3']
-    		}),
-    		color: '#34495e'
-    	},
-    	y: {
-    		sound: new Howl({
-    			src: ['./assets/audio/flash-1.mp3']
-    		}),
-    		color: '#16a085'
-    	},
-    	u: {
-    		sound: new Howl({
-    			src: ['./assets/audio/flash-2.mp3']
-    		}),
-    		color: '#27ae60'
-    	},
-    	i: {
-    		sound: new Howl({
-    			src: ['./assets/audio/flash-3.mp3']
-    		}),
-    		color: '#2980b9'
-    	},
-    	o: {
-    		sound: new Howl({
-    			src: ['./assets/audio/glimmer.mp3']
-    		}),
-    		color: '#8e44ad'
-    	},
-    	p: {
-    		sound: new Howl({
-    			src: ['./assets/audio/moon.mp3']
-    		}),
-    		color: '#2c3e50'
-    	},
-    	a: {
-    		sound: new Howl({
-    			src: ['./assets/audio/pinwheel.mp3']
-    		}),
-    		color: '#f1c40f'
-    	},
-    	s: {
-    		sound: new Howl({
-    			src: ['./assets/audio/piston-1.mp3']
-    		}),
-    		color: '#e67e22'
-    	},
-    	d: {
-    		sound: new Howl({
-    			src: ['./assets/audio/piston-2.mp3']
-    		}),
-    		color: '#e74c3c'
-    	},
-    	f: {
-    		sound: new Howl({
-    			src: ['./assets/audio/prism-1.mp3']
-    		}),
-    		color: '#95a5a6'
-    	},
-    	g: {
-    		sound: new Howl({
-    			src: ['./assets/audio/prism-2.mp3']
-    		}),
-    		color: '#f39c12'
-    	},
-    	h: {
-    		sound: new Howl({
-    			src: ['./assets/audio/prism-3.mp3']
-    		}),
-    		color: '#d35400'
-    	},
-    	j: {
-    		sound: new Howl({
-    			src: ['./assets/audio/splits.mp3']
-    		}),
-    		color: '#1abc9c'
-    	},
-    	k: {
-    		sound: new Howl({
-    			src: ['./assets/audio/squiggle.mp3']
-    		}),
-    		color: '#2ecc71'
-    	},
-    	l: {
-    		sound: new Howl({
-    			src: ['./assets/audio/strike.mp3']
-    		}),
-    		color: '#3498db'
-    	},
-    	z: {
-    		sound: new Howl({
-    			src: ['./assets/audio/suspension.mp3']
-    		}),
-    		color: '#9b59b6'
-    	},
-    	x: {
-    		sound: new Howl({
-    			src: ['./assets/audio/timer.mp3']
-    		}),
-    		color: '#34495e'
-    	},
-    	c: {
-    		sound: new Howl({
-    			src: ['./assets/audio/ufo.mp3']
-    		}),
-    		color: '#16a085'
-    	},
-    	v: {
-    		sound: new Howl({
-    			src: ['./assets/audio/veil.mp3']
-    		}),
-    		color: '#27ae60'
-    	},
-    	b: {
-    		sound: new Howl({
-    			src: ['./assets/audio/wipe.mp3']
-    		}),
-    		color: '#2980b9'
-    	},
-    	n: {
-    		sound: new Howl({
-    			src: ['./assets/audio/zig-zag.mp3']
-    		}),
-    		color: '#8e44ad'
-    	},
-    	m: {
-    		sound: new Howl({
-    			src: ['./assets/audio/moon.mp3']
-    		}),
-    		color: '#2c3e50'
-    	}
-    }
-    
-    var circles = [];
-     
-    function onKeyDown(event) {
-      console.log(view)
-      if (data[event.key]) {
-        data[event.key].sound.play()
-        var maxPoint = new Point(view.size.width, view.size.height);
-        var randomPoint = Point.random();
-        var point = maxPoint * randomPoint;
-        var newCircle = new Path.Circle(point, 300);
-        newCircle.fillColor = data[event.key].color
-        // newCircle.fillColor.hue = Math.random() * 360;   
-        circles.push(newCircle);
-      }
-    }
-    
-    function onFrame(event) {
-      for(var i = 0; i < circles.length; i++){
-        circles[i].fillColor.hue += 1;
-        circles[i].scale(0.9);
-      }
-    }
-  </script>
 </head>
 
-<body onresize="resizeCanvas()">
+<body>
   <div class="vh-100 position-relative text-white text-center">
-    <div class="position-relative" id="canvas-container">
-      <canvas id="myCanvas"></canvas>
-    </div>
     <div class="container align-center" id="header-container">
       <div class="display-4 text-shadow">Hi there, I'm <span id="header-title">Caleb</span></div>
       <br><br>
@@ -227,7 +42,7 @@
           </a>
         </div>
       </div>
-      <div class="row mt-5">
+      <!-- <div class="row mt-5">
         <div class="col">
           <a class="btn btn-outline-light mr-4" href="https://github.com/caleblmyers" target="_blank">
             <p class="mb-0 p-2 h6">GitHub Profile</p>
@@ -236,14 +51,14 @@
             <p class="mb-0 p-2 h6">LinkedIn Profile</p>
           </a>
         </div>
-      </div>
-      <div class="row mt-5">
+      </div> -->
+      <!-- <div class="row mt-5">
         <div class="col">
           <button class="btn btn-outline-light mx-auto" id="btn-patatap">
             <p class="mb-0 p-2 h6">Make Some Noise!</p>
           </button>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 
@@ -273,16 +88,71 @@
           <div class="display-4 text-center text-shadow-sm">Projects</div>
 
           <div class="row mt-5 justify-content-center">
+            <div class="col-12 col-lg-6 mb-5">
+              <div class="card mb-3">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="assets/images/event-hunters.png" class="rounded" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Event Hunters</h5>
+                      <p class="card-text">Easily browse TicketMaster events and find out details about them.</p>
+                      <p class="card-text mb-0">Technologies Used:</p>
+                      <ul>
+                        <li>HTML5</li>
+                        <li>SASS/SCSS</li>
+                        <li>JavaScript</li>
+                      </ul>
+                      <a target="_blank" href="https://caleblmyers.github.io/event-hunters"
+                        class="btn btn-primary mx-1">Deployed
+                        Site</a>
+                      <a target="_blank" href="https://github.com/caleblmyers/event-hunters"
+                        class="btn btn-primary mx-1">GitHub
+                        Repo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 mb-5">
+              <div class="card mb-3">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="assets/images/event-hunters.png" class="rounded" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Event Hunters</h5>
+                      <p class="card-text">Easily browse TicketMaster events and find out details about them.</p>
+                      <p class="card-text mb-0">Technologies Used:</p>
+                      <ul>
+                        <li>HTML5</li>
+                        <li>SASS/SCSS</li>
+                        <li>JavaScript</li>
+                      </ul>
+                      <a target="_blank" href="https://caleblmyers.github.io/event-hunters"
+                        class="btn btn-primary mx-1">Deployed
+                        Site</a>
+                      <a target="_blank" href="https://github.com/caleblmyers/event-hunters"
+                        class="btn btn-primary mx-1">GitHub
+                        Repo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
               <div class="card drop-shadow text-center">
                 <img src="assets/images/event-hunters.png" class="rounded" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Event Hunters</h5>
                   <p class="card-text">Easily browse TicketMaster events and find out details about them.</p>
-                  <a target="_blank" href="https://caleblmyers.github.io/Project-1"
+                  <a target="_blank" href="https://caleblmyers.github.io/event-hunters"
                     class="btn btn-primary mx-1">Deployed
                     Site</a>
-                  <a target="_blank" href="https://github.com/caleblmyers/Project-1" class="btn btn-primary mx-1">GitHub
+                  <a target="_blank" href="https://github.com/caleblmyers/event-hunters"
+                    class="btn btn-primary mx-1">GitHub
                     Repo</a>
                 </div>
               </div>
@@ -352,31 +222,6 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
-            <div class="card drop-shadow text-center">
-              <img src="assets/images/futurama.jpg" class="rounded" alt="Futurama Survey">
-              <div class="card-body">
-                <h5 class="card-title">Futurama Survey</h5>
-                <p class="card-text">Take a survey and find out which Futurama character you are like.</p>
-                <a target="_blank" href="https://futurama-survey.herokuapp.com/" class="btn btn-primary">Deployed
-                  Site</a>
-                <a target="_blank" href="https://github.com/caleblmyers/express-survey" class="btn btn-primary">GitHub
-                  Repo</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
-            <div class="card drop-shadow text-center">
-              <img src="assets/images/burger.jpg" class="rounded" alt="Burger Shop">
-              <div class="card-body">
-                <h5 class="card-title">The Burger Shop</h5>
-                <p class="card-text">Come up with new burger names and see how popular they become!</p>
-                <a target="_blank" href="https://the-burger-shop.herokuapp.com/" class="btn btn-primary">Deployed
-                  Site</a>
-                <a target="_blank" href="https://github.com/caleblmyers/burger" class="btn btn-primary">GitHub Repo</a>
-              </div>
-            </div>
-          </div> -->
             <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
               <div class="card drop-shadow text-center">
                 <img src="assets/images/win.png" class="rounded" alt="Word Guess CLI Game">
@@ -425,61 +270,7 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
-            <div class="card drop-shadow text-center">
-              <img src="assets/images/train.png" class="rounded" alt="Train Scheduler App">
-              <div class="card-body">
-                <h5 class="card-title">Train Scheduler</h5>
-                <p class="card-text">A site for managing and tracking train schedules.</p>
-                <a target="_blank" href="https://caleblmyers.github.io/Train-Scheduler" class="btn btn-primary">Deployed
-                  Site</a>
-                <a target="_blank" href="https://github.com/caleblmyers/Train-Scheduler" class="btn btn-primary">GitHub
-                  Repo</a>
-              </div>
-            </div>
           </div>
-          <div class="col-xs-12 col-md-6 col-lg-4 mb-4">
-            <div class="card drop-shadow text-center">
-              <img src="assets/images/crystal.png" class="rounded" alt="Crystal Collector Game">
-              <div class="card-body">
-                <h5 class="card-title">Crystal Collector</h5>
-                <p class="card-text">Click on the crystals to gain points and reach the goal!</p>
-                <a target="_blank" href="https://caleblmyers.github.io/unit-4-game" class="btn btn-primary">Deployed
-                  Site</a>
-                <a target="_blank" href="https://github.com/caleblmyers/unit-4-game" class="btn btn-primary">GitHub
-                  Repo</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-6 col-lg-4 mb-4">
-            <div class="card drop-shadow text-center">
-              <img src="assets/images/trivia.png" class="rounded" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Alt Rock Trivia</h5>
-                <p class="card-text">Test your knowledge of Alt Rock with this game!</p>
-                <a target="_blank" href="https://caleblmyers.github.io/TriviaGame" class="btn btn-primary">Deployed
-                  Site</a>
-                <a target="_blank" href="https://github.com/caleblmyers/TriviaGame" class="btn btn-primary">GitHub
-                  Repo</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-6 col-lg-4 mb-4">
-            <div class="card drop-shadow text-center">
-              <img src="assets/images/obi.jpg" class="rounded" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Star Wars RPG Game</h5>
-                <p class="card-text">Battle with your favorite Star Wars characters!</p>
-                <a target="_blank" href="https://caleblmyers.github.io/RPG-Game" class="btn btn-primary">Deployed
-                  Site</a>
-                <a target="_blank" href="https://github.com/caleblmyers/RPG-Game" class="btn btn-primary">GitHub
-                  Repo</a>
-              </div>
-            </div>
-          </div> -->
-
-          </div>
-
         </div>
       </div>
     </div>
@@ -489,7 +280,12 @@
         <div class="row align-center">
           <div class="col">
             <span class="h4">Caleb Myers</span>
-            <a href="https://github.com/caleblmyers"><i class="pl-3 fa fa-github"></i></a>
+            <a href="https://github.com/caleblmyers">
+              <i class="pl-3 fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/caleb-myers/">
+              <i class="pl-3 fab fa-linkedin"></i>
+            </a>
           </div>
         </div>
       </div>

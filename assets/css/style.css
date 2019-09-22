@@ -14,7 +14,7 @@ canvas {
   height: 99.2%;
 }
 img {
-  height: 250px;
+  height: 100%;
   width: 100%;
 }
 footer {
@@ -29,7 +29,7 @@ a, a:hover {
   text-decoration: none;
   color: #2C3E50;
 }
-i.fa-github {
+i.fab {
   font-size: 24px;
 }
 .gh-link:hover {

@@ -9,8 +9,8 @@
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/5.11.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/493c2bb60a.js" crossorigin="anonymous"></script>
-  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/sandstone/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-G3Fme2BM4boCE9tHx9zHvcxaQoAkksPQa/8oyn1Dzqv7gdcXChereUsXGx6LtbqA" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -25,20 +25,20 @@
 </head>
 
 <body>
-  <div class="vh-100 position-relative text-white text-center">
+  <div class="vh-100 position-relative text-center bg-navy">
     <div class="container align-center py-5" id="header-container">
       <div class="display-4 text-shadow">Hi there, I'm <span id="header-title">Caleb</span></div>
       <br><br>
-      <h4 class="text-center text-shadow">I'm a full-stack web developer with a passion for solving problems and
-        making things work.</h4>
-      <div class="row mt-5 justify-content-center">
+      <div class="text-center text-shadow lead">I'm a full-stack web developer with a passion for solving problems and
+        making things work.</div>
+      <div class="row mt-5 justify-content-center" id="header-links">
         <div class="col-6 col-md-4">
-          <a class="btn btn-outline-light mx-4" href="#projects">
+          <a class="btn btn-outline-light mx-2" href="#projects">
             <p class="mb-0 p-2 h6">See My Work</p>
           </a>
         </div>
         <div class="col-6 col-md-4">
-          <a class="btn btn-outline-light mx-4"
+          <a class="btn btn-outline-light mx-2"
             href="https://docs.google.com/document/d/1eNWiiqJG4ygIPzZ7uizBZxVRpHvTyfSX/" target="_blank">
             <p class="mb-0 p-2 h6">View My Resume</p>
           </a>
@@ -46,12 +46,12 @@
       </div>
       <div class="row mt-5 justify-content-center">
         <div class="col-6 col-md-4">
-          <a class="btn btn-outline-light mx-4" href="https://github.com/caleblmyers" target="_blank">
+          <a class="btn btn-outline-light mx-2" href="https://github.com/caleblmyers" target="_blank">
             <p class="mb-0 p-2 h6">GitHub</p>
           </a>
         </div>
         <div class="col-6 col-md-4">
-          <a class="btn btn-outline-light mx-4" href="https://www.linkedin.com/in/caleb-myers/" target="_blank">
+          <a class="btn btn-outline-light mx-2" href="https://www.linkedin.com/in/caleb-myers/" target="_blank">
             <p class="mb-0 p-2 h6">LinkedIn</p>
           </a>
         </div>
@@ -67,7 +67,7 @@
   </div>
 
   <main>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top py-3 drop-shadow" id="projects">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-navy sticky-top py-3 shadow-bot" id="projects">
       <a class="navbar-brand" href="#">Caleb Myers</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sections"
         aria-controls="sections" aria-expanded="false" aria-label="Toggle navigation">
@@ -87,142 +87,189 @@
               href="https://docs.google.com/document/d/1eNWiiqJG4ygIPzZ7uizBZxVRpHvTyfSX/">Resume</a>
           </li>
         </ul>
+        <ul class="navbar-nav ml-auto mr-3 mt-2">
+          <li class="nav-item d-inline px-2">
+            <a href="https://github.com/caleblmyers">
+              <i class="fab fa-github"></i>
+            </a>
+            <!-- </li>
+          <li> -->
+            <a href="https://www.linkedin.com/in/caleb-myers/">
+              <i class="pl-3 fab fa-linkedin"></i>
+          </li>
+          </a>
+        </ul>
       </div>
     </nav>
 
-    <div class="container bg-light my-5 p-4 drop-shadow">
+    <div class="container bg-navy-l my-5 p-4 drop-shadow">
       <div class="row">
         <div class="col">
-          <div class="display-4 text-center text-shadow-sm">Projects</div>
+          <div class="display-4 text-center text-white text-shadow-sm">Projects</div>
           <div class="row mt-5 justify-content-center">
             <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
-              <div class="card drop-shadow text-center">
+              <div class="card border-secondary drop-shadow text-center">
                 <img src="assets/images/event-hunters.png" class="rounded" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Event Hunters</h5>
+                  <div class="card-title h5">Event Hunters</div>
                   <p class="card-text">Easily browse TicketMaster events and find out details about them.</p>
+                  <div class="mb-3">
+                    <div class="h6">Technologies used: </div>
+                    <p class="card-text">HTML5, CSS3, JavaScript</p>
+                  </div>
                   <a target="_blank" href="https://caleblmyers.github.io/event-hunters"
-                    class="btn btn-primary mx-1">Deployed
+                    class="btn btn-outline-dark m-1">Deployed
                     Site</a>
                   <a target="_blank" href="https://github.com/caleblmyers/event-hunters"
-                    class="btn btn-primary mx-1">GitHub
+                    class="btn btn-outline-dark m-1">GitHub
                     Repo</a>
                 </div>
               </div>
             </div>
             <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
-              <div class="card drop-shadow text-center">
+              <div class="card border-secondary drop-shadow text-center">
                 <img src="assets/images/unknown-heroes.png" class="rounded" alt="Unknown Heroes">
                 <div class="card-body">
                   <h5 class="card-title">Unknown Heroes</h5>
                   <p class="card-text">Choose a hero and battle enemies to gain experience and level up!</p>
-                  <a target="_blank" href="https://unknown-heroes.herokuapp.com/" class="btn btn-primary">Deployed
+                  <div class="mb-3">
+                    <div class="h6">Technologies used: </div>
+                    <p class="card-text">HTML5, CSS3, JavaScript</p>
+                  </div>
+                  <a target="_blank" href="https://unknown-heroes.herokuapp.com/" class="btn btn-outline-dark m-1">Deployed
                     Site</a>
-                  <a target="_blank" href="https://github.com/caleblmyers/unknown-heroes" class="btn btn-primary">GitHub
+                  <a target="_blank" href="https://github.com/caleblmyers/unknown-heroes"
+                    class="btn btn-outline-dark m-1">GitHub
                     Repo</a>
                 </div>
               </div>
             </div>
             <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
-              <div class="card drop-shadow text-center">
+              <div class="card border-secondary drop-shadow text-center">
                 <img src="assets/images/chen.png" class="rounded" alt="React Matching Game">
                 <div class="card-body">
                   <h5 class="card-title">React Matching Game</h5>
                   <p class="card-text">Test your memory in this matching game made with React.</p>
-                  <a target="_blank" href="https://caleblmyers.github.io/memory-game/" class="btn btn-primary">Deployed
+                  <div class="mb-3">
+                    <div class="h6">Technologies used: </div>
+                    <p class="card-text">HTML5, CSS3, JavaScript</p>
+                  </div>
+                  <a target="_blank" href="https://caleblmyers.github.io/memory-game/"
+                    class="btn btn-outline-dark m-1">Deployed
                     Site</a>
-                  <a target="_blank" href="https://github.com/caleblmyers/memory-game" class="btn btn-primary">GitHub
+                  <a target="_blank" href="https://github.com/caleblmyers/memory-game"
+                    class="btn btn-outline-dark m-1">GitHub
                     Repo</a>
                 </div>
               </div>
             </div>
             <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
-              <div class="card drop-shadow text-center">
+              <div class="card border-secondary drop-shadow text-center">
                 <img src="assets/images/jobs-r-us.png" class="rounded" alt="Jobs R Us">
                 <div class="card-body">
                   <h5 class="card-title">Jobs-R-Us</h5>
                   <p class="card-text">Look up statistics based on state and national job markets.</p>
-                  <a target="_blank" href="https://jobs-r-us.herokuapp.com/" class="btn btn-primary">Deployed Site</a>
-                  <a target="_blank" href="https://github.com/caleblmyers/JobStuff2" class="btn btn-primary">GitHub
+                  <div class="mb-3">
+                    <div class="h6">Technologies used: </div>
+                    <p class="card-text">HTML5, CSS3, JavaScript</p>
+                  </div>
+                  <a target="_blank" href="https://jobs-r-us.herokuapp.com/" class="btn btn-outline-dark m-1">Deployed
+                    Site</a>
+                  <a target="_blank" href="https://github.com/caleblmyers/JobStuff2" class="btn btn-outline-dark m-1">GitHub
                     Repo</a>
                 </div>
               </div>
             </div>
-            <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
-              <div class="card drop-shadow text-center">
+            <!-- <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
+              <div class="card border-secondary drop-shadow text-center">
                 <img src="assets/images/scraper-sites.png" class="rounded" alt="Scraper Sites">
                 <div class="card-body">
                   <h5 class="card-title">Scraper Sites</h5>
                   <p class="card-text">Scrape news sites and comment on your favorite articles.</p>
-                  <a target="_blank" href="https://scraper-sites.herokuapp.com" class="btn btn-primary mx-1">Deployed
+                  <a target="_blank" href="https://scraper-sites.herokuapp.com" class="btn btn-outline-dark m-1 mx-1">Deployed
                     Site</a>
                   <a target="_blank" href="https://github.com/caleblmyers/mongo-scraper"
-                    class="btn btn-primary mx-1">GitHub Repo</a>
+                    class="btn btn-outline-dark m-1 mx-1">GitHub Repo</a>
                 </div>
               </div>
-            </div>
+            </div> -->
             <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
-              <div class="card drop-shadow text-center">
+              <div class="card border-secondary drop-shadow text-center">
                 <img src="assets/images/giphy.png" class="rounded" alt="GIF Generator">
                 <div class="card-body">
                   <h5 class="card-title">GIF Generator</h5>
                   <p class="card-text">Enter a topic and create a button to look up and display GIFs from Giphy.</p>
+                  <div class="mb-3">
+                    <div class="h6">Technologies used: </div>
+                    <p class="card-text">HTML5, CSS3, JavaScript</p>
+                  </div>
                   <a target="_blank" href="https://caleblmyers.github.io/GifTastic"
-                    class="btn btn-primary mx-1">Deployed
+                    class="btn btn-outline-dark m-1 mx-1">Deployed
                     Site</a>
-                  <a target="_blank" href="https://github.com/caleblmyers/GifTastic" class="btn btn-primary mx-1">GitHub
+                  <a target="_blank" href="https://github.com/caleblmyers/GifTastic"
+                    class="btn btn-outline-dark m-1 mx-1">GitHub
                     Repo</a>
                 </div>
               </div>
             </div>
             <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
-              <div class="card drop-shadow text-center">
+              <div class="card border-secondary drop-shadow text-center">
                 <img src="assets/images/win.png" class="rounded" alt="Word Guess CLI Game">
                 <div class="card-body">
                   <h5 class="card-title">A Word Guess of Ice and Fire</h5>
                   <p class="card-text">A Song of Ice and Fire themed command line word guess game.</p>
-                  <a target="_blank" href="https://github.com/caleblmyers/word-guess-cli" class="btn btn-primary">GitHub
+                  <div class="mb-3">
+                    <div class="h6">Technologies used: </div>
+                    <p class="card-text">HTML5, CSS3, JavaScript</p>
+                  </div>
+                  <a target="_blank" href="https://github.com/caleblmyers/word-guess-cli"
+                    class="btn btn-outline-dark m-1">GitHub
                     Repo</a>
                 </div>
               </div>
             </div>
             <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
-              <div class="card drop-shadow text-center">
+              <div class="card border-secondary drop-shadow text-center">
                 <img src="assets/images/manager-view-all.png" class="rounded" alt="Store Manager CLI">
                 <div class="card-body">
                   <h5 class="card-title">Store Manager CLI</h5>
                   <p class="card-text">A command line interface for interacting with an online store.</p>
-                  <a target="_blank" href="https://github.com/caleblmyers/sql-storefront" class="btn btn-primary">GitHub
+                  <div class="mb-3">
+                    <div class="h6">Technologies used: </div>
+                    <p class="card-text">HTML5, CSS3, JavaScript</p>
+                  </div>
+                  <a target="_blank" href="https://github.com/caleblmyers/sql-storefront"
+                    class="btn btn-outline-dark m-1">GitHub
                     Repo</a>
                 </div>
               </div>
             </div>
-            <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
-              <div class="card drop-shadow text-center">
+            <!-- <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
+              <div class="card border-secondary drop-shadow text-center">
                 <img src="assets/images/concert-working.png" class="rounded" alt="LIRI Command Line App">
                 <div class="card-body">
                   <h5 class="card-title">LIRI Command Line App</h5>
                   <p class="card-text">An app that takes in commands to search various API databases.</p>
-                  <a target="_blank" href="https://github.com/caleblmyers/liri-node-app" class="btn btn-primary">GitHub
+                  <a target="_blank" href="https://github.com/caleblmyers/liri-node-app" class="btn btn-outline-dark m-1">GitHub
                     Repo</a>
                 </div>
               </div>
             </div>
             <div class="col-xs-12 col-md-6 col-lg-4 mb-5">
-              <div class="card drop-shadow text-center">
+              <div class="card border-secondary drop-shadow text-center">
                 <img src="assets/images/ipad.png" class="rounded" alt="Game of Thrones Hangman">
                 <div class="card-body">
                   <h5 class="card-title">Game of Thrones Hangman</h5>
                   <p class="card-text">Hangman game themed around Great Houses from Westeros.</p>
                   <a target="_blank" href="https://caleblmyers.github.io/Word-Guess-Game"
-                    class="btn btn-primary">Deployed
+                    class="btn btn-outline-dark m-1">Deployed
                     Site</a>
                   <a target="_blank" href="https://github.com/caleblmyers/Word-Guess-Game"
-                    class="btn btn-primary">GitHub
+                    class="btn btn-outline-dark m-1">GitHub
                     Repo</a>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -238,17 +285,17 @@
       </div>
     </div> -->
 
-    <footer class="bg-light">
+    <footer class="bg-navy text-white">
       <div class="container h-100 position-relative">
         <div class="row text-center h-100 mx-auto align-middle">
           <div class="col mt-4">
             <span class="h4">Caleb Myers</span>
-            <a href="https://github.com/caleblmyers">
+            <!-- <a href="https://github.com/caleblmyers">
               <i class="pl-3 fab fa-github"></i>
             </a>
             <a href="https://www.linkedin.com/in/caleb-myers/">
               <i class="pl-3 fab fa-linkedin"></i>
-            </a>
+            </a> -->
           </div>
         </div>
       </div>

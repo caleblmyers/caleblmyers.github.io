@@ -6,15 +6,15 @@ body {
   height: 100%;
   position: relative;
   font-size: 1.05rem;
-  /* background: url(../images/bg-dark-hex.png); */
-  background: black;
+  background: url(../images/bg-shattered-dark.png);
+  background-color: #00d17d;
 }
 canvas {
   width: 100%;
   height: 99.2%;
 }
 img {
-  height: 100%;
+  height: 225px;
   width: 100%;
 }
 footer {
@@ -30,7 +30,7 @@ a, a:hover {
   color: #2C3E50;
 }
 i.fab {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .gh-link:hover {
   color: white;

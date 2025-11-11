@@ -1,9 +1,6 @@
 <script setup>
-import { defineAsyncComponent } from 'vue'
-
-// Lazy load components for better initial load performance
-const ProjectCard = defineAsyncComponent(() => import('./components/ProjectCard.vue'))
-const ResumeSection = defineAsyncComponent(() => import('./components/ResumeSection.vue'))
+import ProjectCard from './components/ProjectCard.vue'
+import ResumeSection from './components/ResumeSection.vue'
 
 const projects = [
   {

@@ -36,6 +36,9 @@ export default defineConfig({
     chunkSizeWarningLimit: 1000,
     cssCodeSplit: true,
     sourcemap: false,
+    commonjsOptions: {
+      include: [/node_modules/],
+    },
   },
   optimizeDeps: {
     include: ['vue'],

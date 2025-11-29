@@ -1,6 +1,5 @@
 <script setup>
 import ProjectCard from './components/ProjectCard.vue'
-import ResumeSection from './components/ResumeSection.vue'
 
 const projects = [
   {
@@ -27,6 +26,17 @@ const socialLinks = {
   github: 'https://github.com/caleblmyers',
   linkedin: 'https://www.linkedin.com/in/caleb-myers/'
 }
+
+const resumePdfUrl = '/cm_resume.pdf'
+
+const downloadResume = () => {
+  const link = document.createElement('a')
+  link.href = resumePdfUrl
+  link.download = 'Caleb_Myers_Resume.pdf'
+  document.body.appendChild(link)
+  link.click()
+  document.body.removeChild(link)
+}
 </script>
 
 <template>
@@ -37,7 +47,6 @@ const socialLinks = {
         <div class="nav-logo">Caleb Myers</div>
         <div class="nav-links">
           <a href="#projects" class="nav-link">Projects</a>
-          <a href="#resume" class="nav-link">Resume</a>
           <a href="#contact" class="nav-link">Contact</a>
         </div>
       </div>
@@ -74,14 +83,6 @@ const socialLinks = {
       </div>
     </section>
 
-    <!-- Resume Section -->
-    <section id="resume" class="resume">
-      <div class="container">
-        <h2 class="section-title">Resume</h2>
-        <ResumeSection />
-      </div>
-    </section>
-
     <!-- Contact Section -->
     <section id="contact" class="contact">
       <div class="container">
@@ -89,6 +90,12 @@ const socialLinks = {
         <p class="contact-text">
           I'm always open to discussing new opportunities and interesting projects.
         </p>
+        <div class="resume-download-row">
+          <a @click.prevent="downloadResume" href="#" class="resume-download-btn">
+            <font-awesome-icon :icon="['fas', 'download']" class="icon-md" />
+            Download Resume
+          </a>
+        </div>
         <div class="contact-links">
           <a :href="socialLinks.github" target="_blank" rel="noopener noreferrer" class="contact-link">
             <font-awesome-icon :icon="['fab', 'github']" class="icon-lg" />
@@ -250,6 +257,34 @@ const socialLinks = {
   font-size: 1.2rem;
   color: var(--color-text-secondary);
   margin-bottom: var(--spacing-lg);
+}
+
+.resume-download-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.resume-download-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: white;
+  background: var(--color-success);
+  text-decoration: none;
+}
+
+.resume-download-btn:hover {
+  background: var(--color-success-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(66, 184, 131, 0.4);
 }
 
 .contact-links {

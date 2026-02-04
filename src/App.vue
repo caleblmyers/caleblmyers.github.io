@@ -17,7 +17,6 @@ const projects = [
     description: 'Visualize your Spotify listening statistics. Discover your top artists, tracks, and genre preferences with interactive charts and detailed analytics.',
     technologies: ['Vue.js', 'Node.js', 'Spotify API'],
     githubUrl: 'https://github.com/caleblmyers/spotime',
-    liveUrl: 'https://spoti-me.vercel.app/',
     imageUrl: 'spotime.png'
   }
 ]

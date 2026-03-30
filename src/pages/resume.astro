@@ -1,0 +1,141 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+---
+
+<Layout title="Resume — Caleb Myers" description="Caleb Myers — Full Stack Engineer Resume">
+  <Header />
+  <main class="mx-auto max-w-3xl px-6 pt-28 pb-20">
+    <div class="flex items-center justify-between">
+      <h1 class="text-3xl font-bold text-slate-900">Resume</h1>
+      <a
+        href="/caleb-myers-resume.pdf"
+        download
+        class="inline-flex items-center gap-2 rounded-lg bg-accent-600 px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-accent-700"
+      >
+        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+        </svg>
+        Download PDF
+      </a>
+    </div>
+
+    <div class="mt-10 rounded-xl border border-slate-200 bg-white p-8 shadow-sm sm:p-10">
+      <!-- Header -->
+      <div class="text-center">
+        <h2 class="text-2xl font-bold text-slate-900">Caleb Myers</h2>
+        <p class="mt-2 text-sm text-slate-500">
+          Charlotte, NC
+          <span class="mx-1">|</span>
+          cmyers5108@gmail.com
+          <span class="mx-1">|</span>
+          <a href="https://linkedin.com/in/caleb-myers" target="_blank" rel="noopener noreferrer" class="text-accent-600 hover:text-accent-700">linkedin.com/in/caleb-myers</a>
+          <span class="mx-1">|</span>
+          <a href="https://github.com/caleblmyers" target="_blank" rel="noopener noreferrer" class="text-accent-600 hover:text-accent-700">github.com/caleblmyers</a>
+        </p>
+      </div>
+
+      <!-- Summary -->
+      <section class="mt-8">
+        <h3 class="flex items-center gap-3 text-sm font-bold uppercase tracking-wider text-accent-600">
+          Summary
+          <span class="h-px flex-1 bg-accent-200"></span>
+        </h3>
+        <p class="mt-3 leading-relaxed text-slate-600">
+          Full stack engineer with 5 years as the sole developer at a startup — owning architecture, infrastructure, integrations, and a complete Vue-to-React migration. Recently built Task Toad, a SaaS tool that turns high-level project goals into shipped code through automated planning, execution, and review. Pursuing AWS Solutions Architect certification. Strong communicator with an English and Media Arts background.
+        </p>
+      </section>
+
+      <!-- Projects -->
+      <section class="mt-8">
+        <h3 class="flex items-center gap-3 text-sm font-bold uppercase tracking-wider text-accent-600">
+          Projects
+          <span class="h-px flex-1 bg-accent-200"></span>
+        </h3>
+        <div class="mt-3">
+          <div class="flex items-baseline justify-between gap-4">
+            <h4 class="font-bold text-slate-900">Task Toad — AI-Powered Project Management SaaS</h4>
+            <a href="https://tasktoad.app" target="_blank" rel="noopener noreferrer" class="shrink-0 text-sm text-accent-600 hover:text-accent-700">tasktoad.app</a>
+          </div>
+          <ul class="mt-2 space-y-1.5 text-sm leading-relaxed text-slate-600">
+            <li class="flex gap-2">
+              <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent-400"></span>
+              Architected and built a multi-tenant SaaS platform end-to-end: React, TypeScript, GraphQL, PostgreSQL, Docker
+            </li>
+            <li class="flex gap-2">
+              <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent-400"></span>
+              Designed an AI orchestration pipeline that decomposes goals into dependency-aware tasks, generates code, creates PRs, runs AI code review, and monitors CI — with real-time progress via SSE
+            </li>
+            <li class="flex gap-2">
+              <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent-400"></span>
+              Implemented multi-tenant org isolation, role-based access control, and encrypted secrets at rest, with deep GitHub integration for automated PR management and CI monitoring
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="mt-8">
+        <h3 class="flex items-center gap-3 text-sm font-bold uppercase tracking-wider text-accent-600">
+          Experience
+          <span class="h-px flex-1 bg-accent-200"></span>
+        </h3>
+        <div class="mt-3">
+          <div class="flex items-baseline justify-between gap-4">
+            <h4 class="font-bold text-slate-900">Software Engineer → Lead Software Engineer</h4>
+            <span class="shrink-0 text-sm text-slate-500">2019–2024</span>
+          </div>
+          <p class="text-sm text-slate-500">MakeMine</p>
+          <p class="mt-1 text-xs italic text-slate-400">Promoted to Lead January 2024. Sole engineer for most of the 5-year tenure.</p>
+          <ul class="mt-2 space-y-1.5 text-sm leading-relaxed text-slate-600">
+            <li class="flex gap-2">
+              <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent-400"></span>
+              Sole engineer for a suite of proprietary applications — owned architecture, frontend, backend, third-party integrations, and production infrastructure across the full stack
+            </li>
+            <li class="flex gap-2">
+              <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent-400"></span>
+              Led and executed a complete Vue 2 to React migration, modernizing the entire frontend codebase and improving maintainability
+            </li>
+            <li class="flex gap-2">
+              <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent-400"></span>
+              Integrated Shopify, payment processors, and third-party APIs; managed vendor relationships and offshore developer coordination
+            </li>
+            <li class="flex gap-2">
+              <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent-400"></span>
+              Scoped features and prioritized work directly with business stakeholders, shipping under tight startup timelines
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="mt-8">
+        <h3 class="flex items-center gap-3 text-sm font-bold uppercase tracking-wider text-accent-600">
+          Skills
+          <span class="h-px flex-1 bg-accent-200"></span>
+        </h3>
+        <dl class="mt-3 grid grid-cols-[auto_1fr] gap-x-4 gap-y-1.5 text-sm">
+          <dt class="font-semibold text-slate-700">Backend</dt>
+          <dd class="text-slate-600">Node.js, Express, GraphQL, REST APIs, PostgreSQL, Prisma, TypeScript</dd>
+          <dt class="font-semibold text-slate-700">Frontend</dt>
+          <dd class="text-slate-600">React, Next.js, JavaScript (ES6+), Tailwind CSS, Vite</dd>
+          <dt class="font-semibold text-slate-700">Cloud & DevOps</dt>
+          <dd class="text-slate-600">AWS (Solutions Architect in progress), Docker, Git, GitHub Actions, CI/CD, Playwright, Vitest, S3, Railway</dd>
+        </dl>
+      </section>
+
+      <!-- Education -->
+      <section class="mt-8">
+        <h3 class="flex items-center gap-3 text-sm font-bold uppercase tracking-wider text-accent-600">
+          Education & Certifications
+          <span class="h-px flex-1 bg-accent-200"></span>
+        </h3>
+        <div class="mt-3 space-y-1.5 text-sm text-slate-600">
+          <p><span class="font-semibold text-slate-700">AWS Solutions Architect — Associate</span> | In Progress (expected 2026)</p>
+          <p><span class="font-semibold text-slate-700">Full Stack Web Development Certificate</span> | UNC Charlotte | 2019</p>
+          <p><span class="font-semibold text-slate-700">BA English & Media Arts, Minor Business Administration</span> | University of South Carolina | Dean's List</p>
+        </div>
+      </section>
+    </div>
+  </main>
+</Layout>
